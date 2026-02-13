@@ -1,6 +1,6 @@
 // Exercise 3A
 let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
-stringArray = classRoster.toString;
+stringArray = classRoster.toString();
 console.log(stringArray);
 console.log(classRoster);
 
