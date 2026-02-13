@@ -1,17 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3--Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab Exercise 1</h1>
     <script>
+        // Exercise 1A
         let hello = 3;
         var bello = 10;
         const permanentstring = "This is a string";
 
         try {
-            let hello = 20;
+            permanentstring = "This is the updated string";
         } catch (err) {
             console.log("Error: cannot reassign const");
         }
 
-    </script>
-    <body>
+        // Exercise 1B
+        let string1 = "Hello World!";
+        let string2 = "JavaScript is fun!";
 
-    </body>
-</head>
+        console.log(string1.length);
+
+        concatString = string1.concat(" ", string2);
+        console.log(concatString);
+
+        let string3 = string2.replace("fun", "awesome");
+        console.log(string3);
+
+        // Exercise 1C
+        let name = "Alice";
+        let age = 25;
+
+        console.log(`My name is ${name} and I am ${age} years old.`);
+    
+        // Exercise 1D
+        const students = ["Alice", "Tom", "Charlie"];
+        const ages = [19, 21, 20];
+        
+        for(let i = 0; i < students.length; i++){
+            let studentInfo = `My name is ${students[i]} and I am ${ages[i]} years old.`;
+            console.log(studentInfo);
+        }
+    
+        // Exercise 1E
+        let today = new Date();
+        console.log(today.toLocaleDateString("en-CA"));
+        console.log(today.toLocaleDateString("en-US"));
+    
+        console.log(today.getFullYear());
+        console.log(today.getMonth() + 1);          // add 1 because zero-indexed
+        console.log(today.toLocaleDateString("en-CA", {weekday: 'long'}));
+
+        let currMonth = today.getMonth();
+        let winterMonths = [11, 0, 1];
+        let springMonths = [2, 3, 4];
+        let summerMonths = [5, 6, 7];
+        let fallMonths = [8, 9, 10];
+
+        if (winterMonths.includes(currMonth)) {
+            console.log("Winter");
+        } else if (springMonths.includes(currMonth)) {
+            console.log("Spring");
+        } else if (summerMonths.includes(currMonth)) {
+            console.log("Summer");
+        } else if (fallMonths.includes(currMonth)) {
+            console.log("Fall");
+        } else {
+            console.log("The current season cannot be found.");
+        }
+
+    </script>
+</body>
+</html>

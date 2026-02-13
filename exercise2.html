@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab3--Exercise 2</title>
+    </head>
+
+    <body>
+        <h1>JavaScript Lab Exercise 2</h1>
+            <script>
+                // Exercise 2A
+                /*
+                function add(num1, num2){
+                    var sum = num1 + num2;
+                    return sum;
+                }
+
+                function subtract(num1, num2){
+                    var sub = num1 - num2;
+                    return sub;
+                }
+
+                // Test calls
+                console.log(add(1,3));
+                console.log(subtract(10,1));
+
+                // Exercise 2B
+                function add(num1, num2=5){
+                    var sum = num1 + num2;
+                    return sum;
+                }
+  
+                function subtract(num1, num2=3){
+                    var sub = num1 - num2;
+                    return sub;
+                }
+                
+
+                // Test calls
+                console.log(add(1, 10));
+                console.log(add(1));
+                console.log(subtract(10, 1));
+                console.log(subtract(10));
+                */
+
+                //Exercise 2C
+                let add = (num1, num2) => num1 + num2;
+                let subtract = (num1, num2) => num1 - num;
+                console.log(add);
+                console.log(subtract);
+
+                let multiply = (num1, num2) => num1 * num2;
+                let divide = (num1, num2) => {
+                    if (num2 != 0) {
+                        return num1/num2;
+                    } else {
+                        return "Error: Undefined Value";
+                    }
+                };
+
+                function calculator(num1, num2, operation) {
+                    return operation(num1, num2);
+                }
+
+                console.log(calculator(3, 50, add));
+                console.log(calculator(10, 2, divide));
+            </script>
+    </body>
+</html>
